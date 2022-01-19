@@ -20,22 +20,81 @@
 //     console.log(`Jhon's BMI ${jhonBMI} is higher than Mark's ${markBMI})`)
 // }
 
-const scoreDolph1 = 97;
-const scoreDolph2 = 112;
-const scoreDolph3 = 101;
-const averageScoreDolphins = (scoreDolph1 + scoreDolph2 + scoreDolph3) / 3;
-console.log(averageScoreDolphins);
+// 
 
-const ScoreKoalasOne = 109;
-const ScoreKoalasTwo = 95;
-const ScoreKoalasThree = 106;
-const avKoalasScore = (ScoreKoalasOne + ScoreKoalasTwo + ScoreKoalasThree) / 3 ;
-console.log(avKoalasScore);
 
-if (averageScoreDolphins > 100) {
-    console.log(`The Dolphin's scores is higher than Koala and The Dolphin's score is ${averageScoreDolphins}`)
-} else if (averageScoreDolphins === avKoalasScore){
-    console.log(`Draw,Dolphin's score ${averageScoreDolphins} and Koala's score ${avKoalasScore}`);
-} else {
-    console.log(`The Koala's scores is higher than Dolphins and The Koalas's score is ${avKoalasScore}`);
+// const amirAli = console.log('AmirAli');
+
+// amirAli;
+// amirAli;
+
+
+// function callName(name) {
+//     return `Salam ${name}`;
+// }
+
+
+// const firstName = callName('Amir Ali');
+// console.log(firstName);
+
+// console.log(typeof console.log);
+
+// console.log(typeof console.info);
+
+
+// function cutPieces(fruit){
+//     return fruit * 4;
+// }
+
+
+
+// function friutProccesor(apples,oranges){
+
+//     const cutApples = cutPieces(apples);
+//     const cutOranges = cutPieces(oranges);
+
+//     const juice = `Juice with ${cutApples} and ${cutOranges}`;
+//     return juice;
+
+// }
+// console.log(friutProccesor(2, 3));
+
+
+// const calcAge = function(birthYear){
+//     return 2037 - birthYear;
+// }
+
+// const yearUntilRetirement = function (birthyear ,firstName)  {
+//     const age = calcAge(birthyear)
+//     const retirement = 65 - calcAge(birthyear);
+
+//     if(retirement > 0){
+//         console.log(`${firstName} retires in ${retirement} years`);
+//         return retirement;
+//     }else{
+//         console.log(`${firstName} has already retired`);
+//         return 'Horray';
+//     }
+   
+// }
+// console.log(yearUntilRetirement(1991, 'john'));
+// console.log(yearUntilRetirement(1970, 'mike'));
+
+
+
+const calcAvg = (scoreOne , scoreTwo ,scoreThree)=>{
+  let  scores = scoreOne + scoreTwo + scoreThree;
+    return scores / 3;
+}
+
+
+const checkwin = function(avgDolphin , avgKoala){
+    const dolphinScore = calceAvg(avgDolphin,avgDolphin,avgDolphin)
+    const koalaScore = calceAvg(avgKoala,avgKoala,avgKoala)
+
+    if(dolphinScore>100 && dolphinScore>koalaScore){
+        console.log(`Dolphins win (${dolphinScore} vs )`)
+    }
+
+
 }
